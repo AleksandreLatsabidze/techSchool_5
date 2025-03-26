@@ -1,11 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      defer
+    ></script>
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div
+        class="flex justify-between px-20 py-5 bg-blue-600 border-b-2 border-solid border-sky-600"
+      >
+        <div>
+          <h1 class="font-bold text-white text-2xl">TechSchool</h1>
+        </div>
+        <div>
+          <nav>
+            <ul class="flex space-x-6 text-white font-semibold">
+              <li>
+                <a href="#">კონტაქტი</a>
+              </li>
+              <li>
+                <a href="#">ჩვენს შესახებ</a>
+              </li>
+              <li>
+                <a href="#">სტატიები</a>
+              </li>
+              <li>
+                <a href="#">ინფორმაცია</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="flex justify-between bg-blue-600 py-4 px-4 items-center">
+        <p class="w-80 text-white font-semibold">
+          The daytime sky appears blue because air molecules scatter shorter
+          wavelengths of sunlight more than longer ones The night sky appears to
+          be a mostly dark surface or region spangled with stars. The Sun and
+          sometimes the Moon are visible in the daytime sky unless obscured by
+          clouds. At night, the Moon, planets, and stars are similarly visible
+          in the sky.
+        </p>
+        <img
+          src="images/sky.jpg"
+          alt="Card image"
+          class="w-[400px] h-[250px] rounded-xl"
+        />
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="max-w-md p-6 bg-white rounded-lg shadow-2xl mx-auto my-5">
+          <h2 class="text-2xl font-semibold text-center text-blue-600 mb-6">
+            სარეგისტრაციო
+          </h2>
+          <form>
+            <div class="mb-4">
+              <label
+                for="firstName"
+                class="block text-blue-600 font-semibold mb-2"
+                >სახელი</label
+              >
+              <input
+                type="text"
+                id="firstName"
+                class="w-full p-3 border-2 border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="მიუთითეთ სახელი"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="lastName"
+                class="block text-blue-600 font-semibold mb-2"
+                >გვარი</label
+              >
+              <input
+                type="text"
+                id="lastName"
+                class="w-full p-3 border-2 border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="მიუთითეთ გვარი"
+                required
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for="email" class="block text-blue-600 font-semibold mb-2"
+                >ელ. ფოსტა</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="w-full p-3 border-2 border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="მიუთითეთ ელ. ფოსტა"
+                required
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="password"
+                class="block text-blue-600 font-semibold mb-2"
+                >პაროლი</label
+              >
+              <input
+                type="password"
+                id="password"
+                class="w-full p-3 border-2 border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="მიუთითეთ პაროლი"
+                required
+              />
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+              >
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-blue-600 text-white py-6">
+      <div class="flex justify-center space-x-8">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="text-white hover:text-blue-300"
+        >
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          class="text-white hover:text-blue-300"
+        >
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="text-white hover:text-blue-300"
+        >
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="text-white hover:text-blue-300"
+        >
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a
+          href="https://www.github.com"
+          target="_blank"
+          class="text-white hover:text-blue-300"
+        >
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>    
+      <div class="text-center mt-4">
+        <button class="bg-blue-500 text-white rounded-lg py-1 px-2">
+            <a href="fourth.html">წინა გვერდი</a>
+          </button>
+      </div>
+    </footer>
+  </body>
 </html>

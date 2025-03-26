@@ -9,36 +9,52 @@
   <body>
     <main>
       <section>
-        <button
-          class="border-2 border-black rounded-lg p-1 bg-red-500 text-white hover:scale-[1.2] focus:scale-95 transform transition duration-300 m-4"
-        >
-          Hover Button
-        </button>
-        <div>
-          <form>
-            <label for="name" class="block mb-2">Name</label>
-            <input
-              type="text"
-              id="name"
-              class="border-2 border-gray-300 p-2 focus:rounded-md focus:border-blue-500 focus:outline-none transition duration-300"
-              placeholder="Enter your name"
-            />
-          </form>
-        </div>
-        <div
-          class="mt-3 max-w-sm rounded-lg border-2 border-gray-200 shadow-lg p-6 bg-white transition-all duration-300 transform hover:shadow-2xl hover:translate-y-5"
-        >
-          <h2 class="text-xl font-semibold mb-4">Card Title</h2>
-          <p class="text-gray-700 mb-4">
-            This is a description or content inside the card.
-          </p>
+        <div class="flex flex-col items-center justify-center space-y-4">
           <button
-            class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-200"
+            class="border-2 border-black rounded-lg p-1 bg-red-500 text-white hover:scale-[1.2] focus:scale-95 transform transition duration-300 m-4"
           >
-            Action
+            Hover Button
           </button>
+          <div class="pb-6">
+            <form>
+              <label for="name" class="block mb-2">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="border-2 border-gray-300 p-2 focus:rounded-md focus:border-blue-500 focus:outline-none transition duration-300"
+                placeholder="Enter your name"
+              />
+            </form>
+          </div>
+          <div
+            class="mt-3 max-w-sm rounded-lg border-2 border-gray-200 shadow-lg p-6 bg-white transition-all duration-300 transform hover:shadow-2xl hover:translate-y-5"
+          >
+            <h2 class="text-xl font-semibold mb-4">Card Title</h2>
+            <p class="text-gray-700 mb-4">
+              This is a description or content inside the card.
+            </p>
+            <button
+              class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-200"
+            >
+              Action
+            </button>
+          </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="flex justify-between">
+        <div>
+          <button class="bg-red-500 text-white rounded-lg py-1 px-2 mt-10">
+            <a href="third.html">წინა გვერდი</a>
+          </button>
+        </div>
+        <div>
+          <button class="bg-red-500 text-white rounded-lg py-1 px-2 mt-10">
+            <a href="fifth.html">შემდეგი გვერდი</a>
+          </button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
